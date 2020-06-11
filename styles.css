@@ -1,6 +1,11 @@
 body {
+    background-color:lightsteelblue;
     font-family: 'Roboto Slab', serif;
+    font-size: 45;
+    padding-block-start: 1rem;
 }
+
+
 
 .hero {
     align-self: center;
@@ -96,6 +101,10 @@ figure .Finn {
 
 article {
     display: grid;
+}
+
+a:hover {
+    background-color: orange;
 }
 
 /* formcontainer */
@@ -211,3 +220,4 @@ footer {
 
 /* article */
 /* form */
+
