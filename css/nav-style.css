@@ -1,9 +1,4 @@
-/* https://itnext.io/how-to-build-a-responsive-navbar-using-flexbox-and-javascript-eb0af24f19bf
 
-
-*/
-
-/* Screen reader only, visually hidden */
 .sr-only {
     position: absolute;
     width: 1px;
@@ -14,7 +9,9 @@
     clip: rect(0, 0, 0, 0);
     border: 0;
 }
-
+header {
+    color: crimson;
+}
 * {
     box-sizing: border-box;
 }
@@ -38,7 +35,7 @@ footer {
     margin: 0 .5rem;
 }
 
-/* skip link */
+
 .skip {
     position: absolute;
     top: -1000px;
@@ -63,7 +60,6 @@ a.skip:hover {
     overflow: visible;
 }
 
-/*   mobile-first header with hamburger*/
 .logo-container {
     display: flex;
 }
@@ -114,8 +110,6 @@ a.skip:hover {
     display: block;
 }
 
-/*   media query for navbar */
-
 @media screen and (min-width: 40rem) {
 
     .navbar {
@@ -156,6 +150,6 @@ a.skip:hover {
     }
 }
 
-/* end media query for navbar */
+
 
 

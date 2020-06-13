@@ -2,15 +2,14 @@
 <html lang="en">
 
 <head>
-    <title>Project 6.10</title>
+    <title>Timothy J. Mahoney About Me Page</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Black+And+White+Picture" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="css/nav-style.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" media="print" href="print.css">
 </head>
 
@@ -24,8 +23,8 @@
             </span>
             <a href="#header" class="logo">
                 <div class="logo-container">
-                    <img class="logo" src="images/logo-1913689.svg" alt="Company Logo">
-                    <h1 class="page-title">Portfolio Page</h1>
+                    <img class="logo" src="images/TMFavicon.svg" alt="Company Logo">
+                    <h1 class="page-title">Timothy J. Mahoney Portfolio Page</h1>
                 </div>
             </a>
             <ul class="main-nav" id="js-menu">
@@ -49,14 +48,9 @@
     </header>
     <!-- end of header -->
     <!-- start of main content -->
-    
     <main id="main" tabindex="-1" class="main">
 
         <!-- start of bio section -->
-
-        <!--<div class="content">-->
-        <!--  <img class="logo main-col" src="images/logo-1913689.svg" alt="Company Logo">
-                <div class="page-title">Web Dev I</div>-->
 
 
         <section class="hero">
@@ -67,17 +61,15 @@
                     <source media="(min-width: 640px)" srcset="images/Universal-small.jpg">
                     <img class="my-picture" src="images/Universal-xsmall.jpg" alt="This is a picture of me">
                 </picture>
-                <ol>
                 <p class="my-name">Timothy J. Mahoney</p>
                 <p class="my-location">Middlesex, NJ</p>
-            </ol>
             </div>
         </section>
-
+    </main>
         <section id="about-me" class="about-me">
             <div class="about-content">
-                <h3>My Bio</h3>
-                <p class="my-info">I'd like to spend some time working at a small start up and help them build their brand name through a well designed site then move on to large company to manage a team of developers where we work with cutting edge tech.
+                <p class="My Bio">My Bio</p>
+                <p class="my-info">I'd like to spend some time working at a small start up and help them build their brand name through a well designed site then move on to a large company to manage a team of developers where we work with cutting edge tech.
 
                     I have worked with computers for over 20 years in hardware testing, system building, sales, & quality assurance.
 
@@ -121,69 +113,46 @@
         </section>
         <!-- end of photo gallery -->
         <hr class="mobile-first">
-        
 
-                   
-    </main>
-    <!-- end of main content -->
-    <!-- start of contact form -->
+                <section id="contact" class="form-container">
+                    <ol>
+                    <h3>Contact Info</h3>
+                    
+                    <li><a href="www.linkedin.com/in/timothymahoney85bb4b173">LinkedIn</a> </li>
+                   <li> <a href="https://github.com/Timmahoney2000">Github</a></li>
+                    </ol>
+                
+                </section>
+                <!-- end of contact form -->
+                <!-- start of footer -->
+                <footer>
+                    <br class="mobile-first"><br class="mobile-first">
+                    <p>Tim Mahoney &#169;</p>
+                </footer>
+                <div class="back-to-top">
+                    <a href="#">Back To Top</a>
+                </div>
+                <!-- end of footer -->
+                <br class="mobile-first"><br class="mobile-first">
+                <!-- start of javascript for nav toggle -->
+                <script>
+                    let mainNav = document.getElementById('js-menu');
+                    let navBarToggle = document.getElementById('js-navbar-toggle');
+                    let symbolToggle = document.getElementById('symbol-toggle');
 
-    <section id="contact" class="form-container">
-        <ol>
-        <a href="https://www.linkedin.com/in/timothymahoney85bb4b173" target="_blank">LinkedIn</a>
-        <a href="https://github.com/Timmahoney2000" target="_blank">Github</a>
-    </ol>
-        <br>
-        <h1>Contact Info</h1>
-        <form class="contact" method="POST" action="https://formspree.io/G00280483@stu.raritanval.edu">
-            <fieldset>
-                <legend>Email</legend>
-                <input type="email" name="email">
-                <br>
-                <label for="message">Message</label>
-                <br>
-                <textarea name="message" id="message"></textarea>
-            </fieldset>
-            <fieldset>
-                <legend>Reply</legend>
-                <input type="radio" name="yes-no" value="Yes" checked> Yes<br>
-                <input type="radio" name=yes-no value="No"> No<br>
-            </fieldset>
-            <br>
-            <br>
-            <button type="submit">Send<br></button>
-        </form>
-    </section>
-    <!-- end of contact form -->
-    <!-- start of footer -->
-    <footer>
-        <br class="mobile-first"><br class="mobile-first">
-        <p>Timothy J. Mahoney &#169;</p>
-    </footer>
-    <div class="back-to-top">
-        <a href="#">Back To Top</a>
-    </div>
-    <!-- end of footer -->
-    <br class="mobile-first"><br class="mobile-first">
-    <!-- start of javascript for nav toggle -->
-    <script>
-        let mainNav = document.getElementById('js-menu');
-        let navBarToggle = document.getElementById('js-navbar-toggle');
-        let symbolToggle = document.getElementById('symbol-toggle');
+                    navBarToggle.addEventListener('click', function() {
+                        mainNav.classList.toggle('active');
+                        if (symbolToggle.classList.contains('fa-bars')) {
+                            symbolToggle.classList.remove('fa-bars');
+                            symbolToggle.classList.add('fa-times');
+                        } else {
+                            symbolToggle.classList.remove('fa-times');
+                            symbolToggle.classList.add('fa-bars');
+                        }
+                    });
 
-        navBarToggle.addEventListener('click', function() {
-            mainNav.classList.toggle('active');
-            if (symbolToggle.classList.contains('fa-bars')) {
-                symbolToggle.classList.remove('fa-bars');
-                symbolToggle.classList.add('fa-times');
-            } else {
-                symbolToggle.classList.remove('fa-times');
-                symbolToggle.classList.add('fa-bars');
-            }
-        });
-
-    </script>
-    <!-- end of javascript for nav toggle -->
+                </script>
+                <!-- end of javascript for nav toggle -->
 
 
 
